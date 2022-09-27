@@ -9,8 +9,16 @@ exit
 listajugadores = []
 input("Ingrese un jugador: ")
 
-for i in range(10):
+for i in range(2):
     listajugadores.append(input("Ingrese otro jugador: "))
 
 print(listajugadores)
 # WHILE
+
+x = 10 
+
+while x > 0:
+    print(x)
+
+    x -= 1 
+
