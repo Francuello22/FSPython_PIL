@@ -39,7 +39,7 @@ while op <= 4 :
             print()
 
 
-        if op == 2:
+        elif op == 2:
             print("--------------  TRANSFERENCIA  ------------------")
             print()
             print("Su saldo actual es de: $", saldo)
@@ -69,7 +69,7 @@ while op <= 4 :
 
 
 
-        if op == 3:
+        elif op == 3:
             print("--------------- EXTRACCION  ---------------------")
             print()
             print("Su saldo actual es de: $", saldo)
@@ -93,7 +93,7 @@ while op <= 4 :
                     print("No ha escogido una opcion correcta. Porfavor elija otra.")
 
 
-        if op == 4:
+        elif op == 4:
             print("-----------------  SALIR -------------------")
             print()
             print("Gracias por utilizar nuestro sistema")
@@ -103,3 +103,53 @@ while op <= 4 :
 
 
 # PDF 2 - Ejercicio 2 - Identificar numeros pares dentro de un rango
+     
+
+print("-----------------------------------------------------------------------")
+print("--------------------- IDENTIDICADOR DE TIPOS DE NUMEROS ---------------")
+print("-----------------------------------------------------------------------")
+print()
+
+
+op = 0
+
+while op <= 3:
+
+    aceptados = []
+    negados = []
+
+    desde = int(input("Seleccione numero DESDE: "))
+    print()
+    hasta = int(input("Seleccione numero HASTA: "))
+    print()
+
+    op = int(input("Para aceptar numeros seleccione para PARES 1, IMPARES 2: "))
+    print()
+
+    if op == 1: 
+        for i in range (desde, hasta+1): 
+            if i % 2 == 0:
+                aceptados.append(i)
+            else:
+                negados.append(i)
+
+        print("Los numeros aceptados son: ", aceptados)
+        print()
+        print("Y los numeros negados son: ", negados)
+        print()
+
+    elif op == 2:
+        for i in range (desde, hasta+1): 
+            if i % 2 != 0:
+                aceptados.append(i)
+            else:
+                negados.append(i)
+
+        print("Los numeros aceptados son: ", aceptados)
+        print()
+        print("Y los numeros negados son: ", negados)
+        print()
+    else:
+        print("Eligio una opcion que no es correcta. Porfavor elija nuevamente")
+        print()
+
