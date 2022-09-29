@@ -69,6 +69,8 @@ print()
 Lista1.insert(3, "Lol")
 print("La nueva lista es: ", Lista1)
 print()
+# Ordenar listas puede ser decreciente o creciente
+Lista1.sort()
 
 # DICCIONARIOS - Estructuras de datos muy similares a una clase en POO
 
